@@ -4,14 +4,16 @@
     --black-color: #140a00;
     --grey-dark-color:#909090;
     --grey-light-color: #e0e0e0;
+    --yellow-color:#f3e414;
 
     /* Size */
     --padding:10px;
-    --poster-size:100px;
+    --button-size:150px;
 
     /* Font Size */
-    --font-large:18px;
-    --font-medium:14px;
+    --font-huge:30px;
+    --font-large:20px;
+    --font-medium:15px;
     --font-small:12px;
     --font-micro:10px;
 }
@@ -30,14 +32,14 @@
 }
 
 @font-face {
-    font-family: 'ELAND_Choice_M';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-family: 'ELAND_Choice_L';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_L.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'ELAND_Choice_M';
+    font-family: 'ELAND_Choice_L';
 }
 
 ul{
@@ -49,11 +51,14 @@ button:focus{
     border: none;
     cursor: pointer;
     outline: none;
-    background-color: var(--white-color);
+    color: var(--white-color);
+    background-color: var(--black-color)
 }
 
 /* Header */
 header{
+    position: sticky;
+    top:0;
     color: var(--grey-light-color);
     background-color: var(--black-color);
     padding: 0 calc(var(--padding)*2);
@@ -62,7 +67,7 @@ header{
 header .logo{
     font-family: 'ELAND_Nice_M';
     text-align: center;
-    font-size: var(--font-large);
+    font-size: var(--font-huge);
     color: var(--white-color);
     padding-top: var(--padding);
 }
@@ -70,7 +75,7 @@ header .logo{
 header .menu1{
     display:flex;
     justify-content: space-between;
-    font-size: var(--font-micro);
+    font-size: var(--font-small);
     padding: var(--padding) 0;
     border-bottom: 1px solid var(--grey-light-color);
 }
@@ -79,16 +84,17 @@ header .menu2{
     display: flex;
     justify-content: space-evenly;
     padding: var(--padding);
-}
-header .menu2 .main_menu{
     font-size: var(--font-small);
-}
-header .menu2 .small_menu{
-    font-size: var(--font-micro);
 }
 
 #item{
-    margin-right: var(--padding);
+    padding: 0 var(--padding);
+}
+header .menu2 .main_menu #item{
+    border-right: 1px solid var(--grey-light-color);
+}
+header .menu2 .main_menu .reservation{
+    border-left: 1px solid var(--grey-light-color);
 }
 
 /* Movie Trailer Player */
@@ -105,15 +111,86 @@ header .menu2 .small_menu{
 /* Movie Ranking */
 .ranking{
     display: flex;
+    padding: 0 calc(var(--padding)*2);
+    background-color: var(--black-color);
 }
 .ranking .item .info{
     display: flex;
     flex-direction: column;
+    padding: calc(var(--padding)*2) var(--padding);
+    text-align: center;
+    color: var(--white-color);
+    font-size: var(--font-small);
 }
-
 .ranking .item .img img{
-    width: var(--poster-size);
+    width: 100%;
     height: auto;
-    display: flex;
+    padding: 0 calc(var(--padding)/2);
+}
+#star{
+    color: var(--yellow-color);
 }
 
+/* Event */
+.event{
+    padding: calc(var(--padding)*2) calc(var(--padding)*7);
+}
+.event .titlebar{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-medium);
+    padding: var(--padding) 0;
+}
+.event .moreBtn{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+.event .imgbar{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding) 0
+}
+
+/* Preview */
+.preview{
+    padding: calc(var(--padding)*2) calc(var(--padding)*7);
+}
+.preview .titlebar{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding) 0;
+    font-size: var(--font-medium);
+}
+.preview .moreBtn{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+.preview .imgbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Benefit */
+.benefit{
+    display: flex;
+    padding: var(--padding) calc(var(--padding)*7);
+}
+.benefit li{
+    flex:1 1 20%;
+    margin: var(--padding) var(--padding);
+}
+#icon{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--padding);
+    text-align: center;
+    font-size: var(--font-huge);
+}
+.benefit li button{
+    width: 100%;
+    height: var(--button-size);
+    background-color: var(--grey-light-color);;
+    color: var(--black-color);
+    background-color: var(--grey-light-color);
+    font-size: var(--font-large);
+}

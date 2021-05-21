@@ -62,23 +62,10 @@
             <div class="img"><img src="image/fastandfurious.jpg" alt=""></div>
             <div class="info">
                 <span class="title">분노의 질주:더 얼티메이트</span>
-                <div class="detials">
-                    <span class="reserv_rate">예매율 67.0%</span>
-                    <i class="fas fa-star"></i>
-                    <span class="ScoreOrDday">8.6</span>
-                    <button class="heart">
-                        <i class="fas fa-heart"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img"><img src="image/cruella.jpg" alt=""></div>
-            <div class="info">
-                <span class="title">파이프라인</span>
                 <div class="details">
-                    <span class="reserv_rate">예매율 8.9%</span>
-                    <span class="ScoreOrDday">D-5</span>
+                    <span class="reserv_rate">예매율 67.0% |</span>
+                    <i class="fas fa-star" id=star></i>
+                    <span class="score">8.6 |</span>
                     <button class="heart">
                         <i class="fas fa-heart"></i>
                     </button>
@@ -88,10 +75,23 @@
         <div class="item">
             <div class="img"><img src="image/pipeline.jpg" alt=""></div>
             <div class="info">
+                <span class="title">파이프라인</span>
+                <div class="details">
+                    <span class="reserv_rate">예매율 8.9% |</span>
+                    <span class="Dday">D-5 |</span>
+                    <button class="heart">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img"><img src="image/cruella.jpg" alt=""></div>
+            <div class="info">
                 <span class="title">크루엘라</span>
                 <div class="details">
-                    <span class="reserv_rate">예매율 6.5%</span>
-                    <span class="ScoreOrDday">D-5</span>
+                    <span class="reserv_rate">예매율 6.5% |</span>
+                    <span class="Dday">D-5 |</span>
                     <button class="heart">
                         <i class="fas fa-heart"></i>
                     </button>
@@ -103,9 +103,9 @@
             <div class="info">
                 <span class="title">쇼크 웨이브2</span>
                 <div class="details">
-                    <span class="reserv_rate">예매율 3.0%</span>
-                    <i class="fas fa-star"></i>
-                    <span class="ScoreOrDday">8.5</span>
+                    <span class="reserv_rate">예매율 3.0% |</span>
+                    <i class="fas fa-star" id=star></i>
+                    <span class="score">8.5 |</span>
                     <button class="heart">
                         <i class="fas fa-heart"></i>
                     </button>
@@ -117,9 +117,9 @@
             <div class="info">
                 <span class="title">도라에몽:스탠바이미2</span>
                 <div class="details">
-                    <span class="reserv_rate">예매율 2.6%</span>
-                    <i class="fas fa-star"></i>
-                    <span class="ScoreOrDday">8.2</span>
+                    <span class="reserv_rate">예매율 2.6% |</span>
+                    <i class="fas fa-star" id=star></i>
+                    <span class="score">8.2 |</span>
                     <button class="heart">
                         <i class="fas fa-heart"></i>
                     </button>
@@ -134,31 +134,58 @@
 
     <!-- Event -->
     <section class="event">
+        <div class="titlebar">
+            <span class="title">이벤트</span>
+            <span class="moreBtn">더보기 ></span>
+        </div>
+        <div class="imgbar">
+            <div class="img"><img src="image/event1.JPG" alt=""></div>
+            <div class="img"><img src="image/event2.JPG" alt=""></div>
+            <div class="img"><img src="image/event3.JPG" alt=""></div>
+            <div class="img"><img src="image/event6.PNG" alt=""></div>
+        </div>
+        <div class="imgbar">
+            <div class="img"><img src="image/event4.JPG" alt=""></div>
+            <div class="img"><img src="image/event5.JPG" alt=""></div>
+            <div class="img"><img src="image/event6_2.PNG" alt=""></div>
+        </div>
     </section>
 
     <!-- Preview -->
     <section class="preview">
+        <div class="titlebar">
+            <span class="title">시사회/무대인사</span>
+            <span class="moreBtn">더보기 ></span>
+        </div>
+        <div class="imgbar">
+            <div class="img"><img src="image/preview1.JPG" alt=""></div>
+            <div class="img"><img src="image/preview2.JPG" alt=""></div>
+            <div class="img"><img src="image/preview3.JPG" alt=""></div>
+        </div>
     </section>
 
     <!-- Benefit -->
-    <section class="benefit">
-        <ul>
-            <li><button>
-                <i class="fas fa-percent">할인안내</i>
+    <ul class="benefit">
+        <li><button>
+            <i class="fas fa-percent" id=icon></i>
+            <span>할인안내</span>
+        </button></li>
+        <li><button>
+            <i class="fas fa-coins" id=icon></i>
+            <span>포인트</span>
+        </button></li>
+        <li><button>
+            <i class="fas fa-crown" id=icon></i>
+            <span>멤버십</span>
             </button></li>
-            <li><button>
-                <i class="fas fa-coins">포인트</i>
-            </button></li>
-            <li><button>
-                <i class="fas fa-crown">멤버십</i>
-            </button></li>
-            <li><button>
-                <i class="fab fa-pagelines">틴틴클럽</i>
-            </button></li>
-            <li><button>
-                <i class="fas fa-hat-cowboy">브라보클럽</i>
-            </button></li>
-        </ul>
-    </section> 
+        <li><button>
+            <i class="fab fa-pagelines" id=icon></i>
+            <span>틴틴클럽</span>
+        </button></li>
+        <li><button>
+            <i class="fas fa-hat-cowboy" id=icon></i>
+            <span>브라보클럽</span>
+        </button></li>
+    </ul>
 </body>
 </html>
