@@ -7,5 +7,5 @@ closeBtn.addEventListener('click',()=>{
 
 const trailer=document.querySelector('.player button');
 trailer.addEventListener('click',()=>{
-    window.open("video.html","","height=480, width=854");
+    window.open("video/fastandfurious.mp4","","fullscreen");
 });
