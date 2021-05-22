@@ -5,6 +5,7 @@
     --grey-dark-color:#909090;
     --grey-light-color: #e0e0e0;
     --yellow-color:#f3b814;
+    --gradient-color:-webkit-linear-gradient(  #140a00ce,#0c0c0c00 );
 
     /* Size */
     --padding:10px;
@@ -74,7 +75,7 @@ button:focus{
 header{
     position: sticky;
     top:0;
-    background: linear-gradient ( #140a00 , #fff );
+    background: var(--gradient-color);
     padding: 0 var(--side-padding);
 }
 
@@ -90,7 +91,7 @@ header .menu1{
     display:flex;
     justify-content: space-between;
     font-size: var(--font-small);
-    color: var(--grey-dark-color);
+    color: var(--grey-light-color);
     padding: var(--padding) 0;
     border-bottom: 1px solid var(--grey-light-color);
 }
@@ -118,7 +119,12 @@ header .menu2 .main_menu .reservation{
 
 /* Movie Trailer Player */
 .player{
+    --header-size:"green";
+    top: var(--header-size);
+    width: 100%;
+    height: 100%;
     text-align: center;
+    background: var(--black-color);
 }
 .player .background{
     padding: calc(var(--side-padding)/4);
@@ -128,10 +134,14 @@ header .menu2 .main_menu .reservation{
     height: auto;
     max-width: 1500px;
 }
+.player .gradient{
+    margin: var(--side-padding) 0;
+    background: var(--gradient-color);
+}
 
 /* Movie Ranking */
 .ranking{
-    padding: var(--padding) var(--side-padding);
+    padding: 0 var(--side-padding);
     padding-bottom: calc(var(--side-padding)/2);
     color: var(--white-color);
     background-color: var(--black-color);
