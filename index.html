@@ -11,10 +11,17 @@
         src="https://kit.fontawesome.com/e41889c9fd.js" 
         crossorigin="anonymous">
     </script>
+    <script src="main.js" defer></script>
 </head>
 <body>
+    <!-- AD Banner -->
+    <div class="banner">
+        <div class="img"><img src="image/Conjuring.jpg" alt=""></div>
+        <button class="closeBtn"><i class="fas fa-times"></i></button>
+    </div>
+
     <!-- Header -->
-    <header>
+    <header style="position: relative; z-index: 2;">
         <!-- Logo -->
         <div class="logo">
             <span class="title">LOTTE CINEMA</span>
@@ -52,77 +59,85 @@
     </header>
 
     <!-- Movie Trailer Player -->
-    <section class="player">
-        <video controls src="video/fastandfurious.mp4"></video>
+    <section class="player" style="position: relative; left:0px; top: -115px; z-index: 1;">
+        <div class="background"></div>
+        <button><img src="image/fastandfurious_thumbnail.jpg" alt=""></button>
+        <div class="background"></div>
     </section>
 
     <!-- Movie Ranking -->
     <section class="ranking">
-        <div class="item">
-            <div class="img"><img src="image/fastandfurious.jpg" alt=""></div>
-            <div class="info">
-                <span class="title">분노의 질주:더 얼티메이트</span>
-                <div class="details">
-                    <span class="reserv_rate">예매율 67.0% |</span>
-                    <i class="fas fa-star" id=star></i>
-                    <span class="score">8.6 |</span>
-                    <button class="heart">
-                        <i class="fas fa-heart"></i>
-                    </button>
+        <div class="clock">
+            <i class="far fa-clock"></i>
+            <div id="Clock"></div>
+        </div>
+        <div class="info">
+            <div class="item">
+                <div class="img"><img src="image/fastandfurious.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">분노의 질주:더 얼티메이트</span>
+                    <div class="details">
+                        <span class="reserv_rate">예매율 67.0% |</span>
+                        <i class="fas fa-star" id=star></i>
+                        <span class="score">8.6 |</span>
+                        <button class="heart">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><img src="image/pipeline.jpg" alt=""></div>
-            <div class="info">
-                <span class="title">파이프라인</span>
-                <div class="details">
-                    <span class="reserv_rate">예매율 8.9% |</span>
-                    <span class="Dday">D-5 |</span>
-                    <button class="heart">
-                        <i class="fas fa-heart"></i>
-                    </button>
+            <div class="item">
+                <div class="img"><img src="image/pipeline.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">파이프라인</span>
+                    <div class="details">
+                        <span class="reserv_rate">예매율 8.9% |</span>
+                        <span class="Dday">D-5 |</span>
+                        <button class="heart">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><img src="image/cruella.jpg" alt=""></div>
-            <div class="info">
-                <span class="title">크루엘라</span>
-                <div class="details">
-                    <span class="reserv_rate">예매율 6.5% |</span>
-                    <span class="Dday">D-5 |</span>
-                    <button class="heart">
-                        <i class="fas fa-heart"></i>
-                    </button>
+            <div class="item">
+                <div class="img"><img src="image/cruella.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">크루엘라</span>
+                    <div class="details">
+                        <span class="reserv_rate">예매율 6.5% |</span>
+                        <span class="Dday">D-5 |</span>
+                        <button class="heart">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><img src="image/shorkwave.jpg" alt=""></div>
-            <div class="info">
-                <span class="title">쇼크 웨이브2</span>
-                <div class="details">
-                    <span class="reserv_rate">예매율 3.0% |</span>
-                    <i class="fas fa-star" id=star></i>
-                    <span class="score">8.5 |</span>
-                    <button class="heart">
-                        <i class="fas fa-heart"></i>
-                    </button>
+            <div class="item">
+                <div class="img"><img src="image/shorkwave.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">쇼크 웨이브2</span>
+                    <div class="details">
+                        <span class="reserv_rate">예매율 3.0% |</span>
+                        <i class="fas fa-star" id=star></i>
+                        <span class="score">8.5 |</span>
+                        <button class="heart">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="img"><img src="image/doraemon.jpg" alt=""></div>
-            <div class="info">
-                <span class="title">도라에몽:스탠바이미2</span>
-                <div class="details">
-                    <span class="reserv_rate">예매율 2.6% |</span>
-                    <i class="fas fa-star" id=star></i>
-                    <span class="score">8.2 |</span>
-                    <button class="heart">
-                        <i class="fas fa-heart"></i>
-                    </button>
+            <div class="item">
+                <div class="img"><img src="image/doraemon.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">도라에몽:스탠바이미2</span>
+                    <div class="details">
+                        <span class="reserv_rate">예매율 2.6% |</span>
+                        <i class="fas fa-star" id=star></i>
+                        <span class="score">8.2 |</span>
+                        <button class="heart">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,4 +203,16 @@
         </button></li>
     </ul>
 </body>
+
+<!-- Current Date and Time -->
+<script language="javascript">
+    var today = new Date();
+    var currentDate_Month=today.getMonth()+1;
+    if(currentDate_Month<10){
+        var Month="0"+currentDate_Month;
+    }
+    var currentDate = Month+"."+today.getDate();
+    var currentTime = " "+today.getHours()+":"+"00 기준";
+    var Clock = document.getElementById('Clock').innerHTML=currentDate+currentTime;
+</script>
 </html>
