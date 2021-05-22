@@ -11,6 +11,9 @@
         src="https://kit.fontawesome.com/e41889c9fd.js" 
         crossorigin="anonymous">
     </script>
+    <script>
+        var header_length=0;
+    </script>
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -47,7 +50,7 @@
                 <span class="reservation" id="item">예매</span>
                 <span class="movie" id="item">영화</span>
                 <span class="theater" id="item">영화관</span>
-                <span class="event" id="item">이벤트</span>
+                <span class="Event" id="item">이벤트</span>
                 <span class="store" id="item">스토어</span>
             </div>
             <div class="small_menu">
@@ -59,9 +62,8 @@
     </header>
 
     <!-- Movie Trailer Player -->
-    <section class="player" style="position: relative; z-index: 1;" id=poster>
-        <button><img src="image/fastandfurious_thumbnail.jpg" alt=""></button>
-        <!-- <div class="gradient" style="position: relative; left:0px; top: -115px; z-index: 2;"></div> -->
+    <section class="player" id=poster>
+        <button><img src="image/fastandfurious_thumbnail.jpg" alt="" style="z-index: 1;"></button>
     </section>
 
     <!-- Movie Ranking -->
@@ -212,6 +214,10 @@
     }
     var currentDate = Month+"."+today.getDate();
     var currentTime = " "+today.getHours()+":"+"00 기준";
-    var Clock = document.getElementById('Clock').innerHTML=currentDate+currentTime;
+    document.getElementById('Clock').innerHTML=currentDate+currentTime;
+</script>
+<script lang="javascript">
+    var header=document.querySelector('header');
+    header_length=$(header).height;
 </script>
 </html>
