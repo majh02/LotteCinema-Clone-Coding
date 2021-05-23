@@ -5,6 +5,7 @@
     --grey-dark-color:#909090;
     --grey-light-color: #e0e0e0;
     --yellow-color:#f3b814;
+    --red-color:#ee3232;
     --gradient-color:-webkit-linear-gradient(  #140a00ce,#0c0c0c00 );
 
     /* Size */
@@ -163,13 +164,19 @@ header .menu2 .main_menu .reservation{
     text-align: center;
     font-size: var(--font-small);
 }
-.ranking .info .item .img img{
+.ranking .info img{
     width: 100%;
     height: auto;
     padding: 0 calc(var(--padding)/2);
 }
+.ranking .info img:hover{
+    opacity: 50%;
+}
 #star{
     color: var(--yellow-color);
+}
+.heart-active{
+    color: var(--red-color);
 }
 
 /* Event */

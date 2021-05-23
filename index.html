@@ -72,7 +72,7 @@
             <i class="far fa-clock"></i>
             <div id="Clock"></div>
         </div>
-        <div class="info">
+        <div class="info" id=info>
             <div class="item">
                 <div class="img"><img src="image/fastandfurious.jpg" alt=""></div>
                 <div class="info">
@@ -81,7 +81,7 @@
                         <span class="reserv_rate">예매율 67.0% |</span>
                         <i class="fas fa-star" id=star></i>
                         <span class="score">8.6 |</span>
-                        <button class="heart">
+                        <button class="heart" id=heart1>
                             <i class="fas fa-heart"></i>
                         </button>
                     </div>
@@ -94,7 +94,7 @@
                     <div class="details">
                         <span class="reserv_rate">예매율 8.9% |</span>
                         <span class="Dday">D-5 |</span>
-                        <button class="heart">
+                        <button class="heart" id=heart2>
                             <i class="fas fa-heart"></i>
                         </button>
                     </div>
@@ -107,7 +107,7 @@
                     <div class="details">
                         <span class="reserv_rate">예매율 6.5% |</span>
                         <span class="Dday">D-5 |</span>
-                        <button class="heart">
+                        <button class="heart" id=heart3>
                             <i class="fas fa-heart"></i>
                         </button>
                     </div>
@@ -121,7 +121,7 @@
                         <span class="reserv_rate">예매율 3.0% |</span>
                         <i class="fas fa-star" id=star></i>
                         <span class="score">8.5 |</span>
-                        <button class="heart">
+                        <button class="heart" id=heart4>
                             <i class="fas fa-heart"></i>
                         </button>
                     </div>
@@ -135,7 +135,7 @@
                         <span class="reserv_rate">예매율 2.6% |</span>
                         <i class="fas fa-star" id=star></i>
                         <span class="score">8.2 |</span>
-                        <button class="heart">
+                        <button class="heart" id=heart5>
                             <i class="fas fa-heart"></i>
                         </button>
                     </div>
@@ -215,9 +215,5 @@
     var currentDate = Month+"."+today.getDate();
     var currentTime = " "+today.getHours()+":"+"00 기준";
     document.getElementById('Clock').innerHTML=currentDate+currentTime;
-</script>
-<script lang="javascript">
-    var header=document.querySelector('header');
-    header_length=$(header).height;
 </script>
 </html>
